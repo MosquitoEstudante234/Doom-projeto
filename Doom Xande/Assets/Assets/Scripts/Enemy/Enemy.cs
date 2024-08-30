@@ -130,5 +130,6 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(blood.main.duration + 0.5f);
 
         Destroy(gameObject);
+        WinCondition.score--;
     }
 }
